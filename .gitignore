@@ -1,18 +1,33 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# Editor-based HTTP Client requests
-/httpRequests/
+### IntelliJ IDEA ###
+.idea/
 
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-# Additional ignored files
-/.idea/
-*.class
-/.gradle/
-/*/bin/
-/*/build/
-/build/
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
