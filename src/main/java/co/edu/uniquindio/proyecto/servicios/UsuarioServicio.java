@@ -1,15 +1,17 @@
-package proyecto.servicios;
+package co.edu.uniquindio.proyecto.servicios;
 
-
-import proyecto.dto.CrearUsuarioDTO;
-import proyecto.dto.EditarUsuarioDTO;
-import proyecto.dto.UsuarioDTO;
+import co.edu.uniquindio.proyecto.dto.CrearUsuarioDTO;
+import co.edu.uniquindio.proyecto.dto.EditarUsuarioDTO;
+import co.edu.uniquindio.proyecto.dto.UsuarioDTO;
 
 import java.util.List;
 
 public interface UsuarioServicio {
-    void crear(CrearUsuarioDTO cuenta);
-    void editar(EditarUsuarioDTO cuenta);
-    void eliminar(String id);
-    UsuarioDTO obtener(String id);
-    List<UsuarioDTO> listarTodos();
+
+    void crear(CrearUsuarioDTO cuenta) throws Exception;
+    void eliminar(String id) throws Exception;
+    void editar(EditarUsuarioDTO cuenta) throws Exception;
+    UsuarioDTO obtener(String id) throws Exception;
+    List<UsuarioDTO> listarTodos(String nombre, String ciudad, int pagina);
+
+}
