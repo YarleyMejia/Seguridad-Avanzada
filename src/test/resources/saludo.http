@@ -3,3 +3,7 @@ GET http://localhost:8080/saludo
 
 ### Saludo con un nombre dado por parámetro
 GET http://localhost:8080/saludo/Carlos
+
+
+### Saludo con un nombre dado por parámetro
+GET http://localhost:8080/saludo/Carlos
