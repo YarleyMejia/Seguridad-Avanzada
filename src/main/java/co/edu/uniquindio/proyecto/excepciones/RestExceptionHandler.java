@@ -36,7 +36,7 @@ public class RestExceptionHandler {
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<MensajeDTO<List<ValidacionDTO>>> validationExceptionHandler( MethodArgumentNotValidException ex ) {
+    public ResponseEntity<MensajeDTO<List<ValidacionDTO>>> validationExceptionHandler(MethodArgumentNotValidException ex ) {
 
         List<ValidacionDTO> errores = ex.getFieldErrors()
                 .stream()
@@ -47,4 +47,3 @@ public class RestExceptionHandler {
     }
 
 }
-

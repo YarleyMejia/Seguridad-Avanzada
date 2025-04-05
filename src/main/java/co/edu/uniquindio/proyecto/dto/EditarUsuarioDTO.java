@@ -12,4 +12,7 @@ public record EditarUsuarioDTO(
         @NotBlank @Length(max = 100) String direccion,
         @Length(max = 10) String telefono
 ) {
+
 }
+
+

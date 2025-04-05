@@ -1,5 +1,6 @@
 package co.edu.uniquindio.proyecto.dto;
 
+
 import co.edu.uniquindio.proyecto.modelo.enums.Ciudad;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -15,4 +16,3 @@ public record CrearUsuarioDTO(
         @NotBlank @Length(min = 7, max = 20) String password
 ) {
 }
-
